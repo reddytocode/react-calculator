@@ -20,6 +20,10 @@ function App() {
     setResultado(Number(numero1) + Number(numero2));
   };
 
+  const restar = () => {
+    setResultado(Number(numero1) - Number(numero2));
+  };
+
   return (
     <div className="App">
       <div>
@@ -44,6 +48,10 @@ function App() {
 
       <Button variant="contained" color="secondary" onClick={sumar}>
         Sumar
+      </Button>
+
+      <Button variant="contained" color="secondary" onClick={restar}>
+        Restar
       </Button>
 
       <div> Resultado: {resultado}</div>
