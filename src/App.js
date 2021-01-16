@@ -49,8 +49,8 @@ function App() {
       <Button variant="contained" color="secondary" onClick={sumar}>
         Sumar
       </Button>
-
-      <Button variant="contained" color="secondary" onClick={restar}>
+      <br />
+      <Button variant="contained" color="primary" onClick={restar}>
         Restar
       </Button>
 
