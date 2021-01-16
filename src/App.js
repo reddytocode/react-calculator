@@ -17,11 +17,11 @@ function App() {
   };
 
   const sumar = () => {
-    setResultado(Number(numero1) + Number(numero2));
+    setResultado(`Suma: ${Number(numero1) + Number(numero2)}`);
   };
 
   const restar = () => {
-    setResultado(Number(numero1) - Number(numero2));
+    setResultado(`Resta: ${Number(numero1) - Number(numero2)}`);
   };
 
   return (
@@ -54,7 +54,7 @@ function App() {
         Restar
       </Button>
 
-      <div> Resultado: {resultado}</div>
+      <div> Resultado de la {resultado}</div>
     </div>
   );
 }
