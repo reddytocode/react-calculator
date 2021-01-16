@@ -17,7 +17,11 @@ function App() {
   };
 
   const sumar = () => {
-    setResultado(Number(numero1) + Number(numero2));
+    setResultado(`Suma: ${Number(numero1) + Number(numero2)}`);
+  };
+
+  const restar = () => {
+    setResultado(`Resta: ${Number(numero1) - Number(numero2)}`);
   };
 
   return (
@@ -45,8 +49,12 @@ function App() {
       <Button variant="contained" color="secondary" onClick={sumar}>
         Sumar
       </Button>
+      <br />
+      <Button variant="contained" color="primary" onClick={restar}>
+        Restar
+      </Button>
 
-      <div> Resultado: {resultado}</div>
+      <div> Resultado de la {resultado}</div>
     </div>
   );
 }
